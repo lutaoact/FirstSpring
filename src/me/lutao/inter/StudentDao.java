@@ -1,12 +1,14 @@
 package me.lutao.inter;
 
 import me.lutao.bean.Student;
+import org.springframework.jdbc.core.JdbcTemplate;
+
 import javax.sql.DataSource;
 import java.util.List;
 
 public interface StudentDao {
 
-    void setDataSource(DataSource ds);
+    void setJdbcTemplate(JdbcTemplate j);
 
     void addStudent(Student student);
 

@@ -24,7 +24,6 @@
 
     <bean id="studentDaoImp"
           class="me.lutao.bean.StudentDaoImp">
-        <property name="dataSource" ref="datasource" />
         <property name="jdbcTemplate" ref="jdbctemplate" />
     </bean>
 </beans>

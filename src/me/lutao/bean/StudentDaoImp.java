@@ -8,14 +8,9 @@ import javax.sql.DataSource;
 import java.util.List;
 
 public class StudentDaoImp implements StudentDao {
-    private DataSource dataSource;
     private JdbcTemplate jdbcTemplate;
 
     @Override
-    public void setDataSource(DataSource ds) {
-        dataSource = ds;
-    }
-
     public void setJdbcTemplate(JdbcTemplate j) {
         jdbcTemplate = j;
     }
