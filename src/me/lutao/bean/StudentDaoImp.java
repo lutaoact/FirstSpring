@@ -64,6 +64,7 @@ public class StudentDaoImp implements StudentDao {
     }
 
     public void displayAll() {
+        System.out.println("displayAll");
         List<Student> students = allStudents();
         for (Student s : students) {
             s.display();
